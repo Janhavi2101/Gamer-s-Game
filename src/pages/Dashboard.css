@@ -1,0 +1,125 @@
+/* App.css */
+
+/* General Container Styles */
+.container {
+    padding: 20px;
+    max-width: 100%;
+    margin: 0 auto;
+    height: 150px;
+}
+
+/* Card Styles */
+.card {
+    background-color: #000000;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+/* Card Heading */
+.card h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+/* Card Paragraphs */
+.card p {
+    margin: 5px 0;
+}
+
+/* Card List Styles */
+.card ul {
+    padding-left: 20px;
+    margin: 0;
+}
+
+.card ul li {
+    list-style-type: disc;
+    margin-bottom: 5px;
+}
+
+/* Container for Overlay */
+.container {
+    position: relative;
+    width: 100%;
+    border-radius: 10px;
+    margin: 5px;
+    background-color: #000000;
+}
+
+/* Image Styles */
+.image {
+    display: block;
+    width: 10%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Overlay Styles */
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: transparent;
+    backdrop-filter: blur(4px);
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: 0.5s ease;
+}
+
+.container:hover .overlay {
+    width: 100%;
+}
+
+/* Overlay Text */
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+}
+
+/* Heading Styles */
+.dashhead {
+    background-color: #5161ce;
+    width: fit-content;
+    border-radius: 8px;
+}
+
+/* Panel Layout Styles */
+.left-panel {
+    float: left;
+    width: 70%;
+    /* Adjust width as needed */
+    padding: 20px;
+}
+
+.right-panel {
+    float: right;
+    width: 30%;
+    /* Adjust width as needed */
+    padding: 20px;
+    position: fixed;
+    top: 50;
+    right: 0;
+    height: 100vh;
+    /* Full height */
+    background-color: #7289da;
+
+    /* Background color for right panel */
+}
+
+/* Right Panel Card */
+.right-panel .card {
+    width: 100%;
+    height: 100%;
+    /* Full width of the right panel */
+}
